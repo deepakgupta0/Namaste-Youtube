@@ -1,0 +1,13 @@
+.pf-css-slider {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+.pf-css-slider .row {
+    overflow: auto;
+    display: block;
+    padding-bottom: 24px;
+    margin-bottom: -24px;
+    margin-left: 0;
+    margin-right: 0;
+}

@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Namaste-Youtube
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Namaste-Youtube is a YouTube clone project developed using React, Redux, and Tailwind CSS. It replicates core functionalities of YouTube while incorporating additional features to enhance user experience.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Hamburger Menu:** Provides seamless navigation with a home icon that redirects users to the home page without triggering a full page reload.
+  
+- **Search Box:**
+  - Utilizes a live API from YouTube for real-time search results.
+  - Implements debouncing to optimize search requests.
+  - Includes caching mechanisms for improved performance.
+  
+- **Video Cards:**
+  - Utilizes a live API from YouTube for real-time data for thumbnails, descriptions, and view counts.
+  - Incorporates YouTube embed functionality to seamlessly display videos within the project interface upon clicking on any video card.
+  
+- **Comments Section:**
+  - Implements a comments section with hard-coded comments due to YouTube API limitations on nested comments.
+  - Utilizes recursion to display nested comments.
+  
+- **Live Chat:** Implements a real-time live chat feature for enhanced user interaction and engagement.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To get started with Namaste-Youtube, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
 
-### `npm test`
+   ```bash
+   git clone <repository-url>
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies:
 
-### `npm run build`
+   ```bash
+   cd namaste-youtube
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the application.
 
-### `npm run eject`
+## Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Contributions are welcome! If you'd like to contribute to Namaste-Youtube, please follow these guidelines:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Fork the repository and create your branch:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   git checkout -b feature/my-feature
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Commit your changes:
 
-## Learn More
+   ```bash
+   git commit -am 'Add some feature'
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Push to the branch:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   git push origin feature/my-feature
+   ```
 
-### Code Splitting
+4. Submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+This project is licensed under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Acknowledgements
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- This project was inspired by the functionalities of YouTube.
+- Special thanks to the YouTube API for providing real-time data for video cards and search functionality.
